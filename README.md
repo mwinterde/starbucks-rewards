@@ -2,23 +2,43 @@
 
 ## Project Overview
 
-tbd
+In this project we work with simulated data that mimics customer behavior on the Starbucks rewards mobile app. Based on various user demographics and offer characteristics, we want to build a recommendation engine that allows marketing managers to choose the best offer for a customer, that is, it provides the highest probability of completion. Therefore we train and deploy a classification model using Amazon SageMaker which provides the completion probability for a given customer-offer combination. These predictions can then be used to recommend the best offer for a given user to the marketing team. 
+
 
 ## Installation
 
-### Dependencies
+### Start AWS SageMaker Notebook Instance
 
-tbd
+Start a AWS SageMaker notebook instance  and launch a terminal to clone this repository to the `~/SageMaker` directory. 
 
-### Amazon SageMaker
+```
+git clone https://github.com/mwinterde/udacity-nd009t-capstone.git ~/SageMaker/udacity-nd009t-capstone
+```
 
-tbd
+### Install Dependencies
+
+If you are working on a SageMaker notebook instance, there is nothing to do for you. In this project, we will only work with standard libraries that are already part of the pre-installed notebook kernels. If you are working on your local machine use conda to install the dependencies:
+
+Create an environment:
+
+```
+conda env create --file environment.yml
+```
+
+Activate the environment:
+
+```
+conda activate udacity-nd009t-capstone
+```
+
 
 ## File Descriptions
 
 ### Notebooks
 
-tbd
+* `01_Data_Exploration_And_Preprocessing.ipynb` - first exploration of the given datasets + preparation of the data for model training
+* `02_Broad_Model_Comparison.ipynb` - broad comparison between the predictive power of Logistic Regression, KNN and Random Forest models
+* `03_Model_Deployment_And_Application.ipynb` - final training and deployment of a Random Forest model + illustration of the major use case
 
 
 ### Data
